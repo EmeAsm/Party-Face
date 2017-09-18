@@ -17,6 +17,9 @@
 		1B2D9A581F6FF5FD006D0C12 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D9A571F6FF5FD006D0C12 /* GradientView.swift */; };
 		1B2D9A5D1F700638006D0C12 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D9A5C1F700638006D0C12 /* FancyBtn.swift */; };
 		1B2D9A601F700693006D0C12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D9A5F1F700693006D0C12 /* Constants.swift */; };
+		1B2D9A621F701699006D0C12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B2D9A611F70168D006D0C12 /* GoogleService-Info.plist */; };
+		1B2D9A631F701967006D0C12 /* Dosis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1B2D9A5A1F6FFF84006D0C12 /* Dosis-SemiBold.otf */; };
+		1B2D9A641F701967006D0C12 /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B2D9A5B1F700030006D0C12 /* Baloo-Regular.ttf */; };
 		F7C3C2EC855F7A078E36BECE /* Pods_Party_Face.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C412C49113F732F4A15C33A /* Pods_Party_Face.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,7 @@
 		1B2D9A5B1F700030006D0C12 /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
 		1B2D9A5C1F700638006D0C12 /* FancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		1B2D9A5F1F700693006D0C12 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B2D9A611F70168D006D0C12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A23D5953899109669E042DA /* Pods-Party Face.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Face.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party Face/Pods-Party Face.debug.xcconfig"; sourceTree = "<group>"; };
 		2C412C49113F732F4A15C33A /* Pods_Party_Face.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_Face.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC3306A81231D8133081095 /* Pods-Party Face.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Face.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party Face/Pods-Party Face.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 				1B1C81021F6FF2360019A353 /* LaunchScreen.storyboard */,
 				1B1C81051F6FF2360019A353 /* Info.plist */,
 				1B1C80FD1F6FF2360019A353 /* Party_Face.xcdatamodeld */,
+				1B2D9A611F70168D006D0C12 /* GoogleService-Info.plist */,
 			);
 			path = "Party Face";
 			sourceTree = "<group>";
@@ -217,7 +222,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2D9A631F701967006D0C12 /* Dosis-SemiBold.otf in Resources */,
+				1B2D9A641F701967006D0C12 /* Baloo-Regular.ttf in Resources */,
 				1B1C81041F6FF2360019A353 /* LaunchScreen.storyboard in Resources */,
+				1B2D9A621F701699006D0C12 /* GoogleService-Info.plist in Resources */,
 				1B1C81011F6FF2360019A353 /* Assets.xcassets in Resources */,
 				1B1C80FC1F6FF2360019A353 /* Main.storyboard in Resources */,
 			);
