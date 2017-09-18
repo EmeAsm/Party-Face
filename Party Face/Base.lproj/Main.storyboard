@@ -1,24 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+        <array key="Baloo-Regular.ttf">
+            <string>Baloo-Regular</string>
+        </array>
+        <array key="Dosis-SemiBold.otf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Party_Face" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmj-9v-gKs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party face logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-ah-mJ1">
+                                        <rect key="frame" x="132" y="55" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="1XJ-6O-Aee"/>
+                                            <constraint firstAttribute="width" constant="150" id="R9u-Ym-MpF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party Face" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHC-Bf-D28">
+                                        <rect key="frame" x="132" y="213" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="T8g-hV-cKt"/>
+                                            <constraint firstAttribute="height" constant="30" id="efa-mt-Npg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baloo-Regular" family="Baloo" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven’t signed in before, an account will be automaticaly created for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivg-OV-WgM">
+                                        <rect key="frame" x="8" y="678" width="398" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4xI-IV-hgJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email logo" translatesAutoresizingMaskIntoConstraints="NO" id="GIs-BI-nEE">
+                                        <rect key="frame" x="34" y="260" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="aUi-GV-t7i"/>
+                                            <constraint firstAttribute="width" constant="28" id="oO0-zR-sLl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKa-sM-gHZ">
+                                        <rect key="frame" x="70" y="260" width="312" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="LXi-Qu-uYm"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="done"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJs-xg-D73">
+                                        <rect key="frame" x="32" y="290" width="350" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="uwL-Ke-eDI"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password logo" translatesAutoresizingMaskIntoConstraints="NO" id="4tz-8z-cPW">
+                                        <rect key="frame" x="34" y="311" width="28" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="vpl-kx-H5A"/>
+                                            <constraint firstAttribute="height" constant="26" id="yJa-SN-4EJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-Rq-ED6">
+                                        <rect key="frame" x="70" y="311" width="312" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Zsa-g4-SKZ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="t8y-SR-CEk"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RY0-Ey-AtY">
+                                        <rect key="frame" x="32" y="343" width="350" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="d8M-Vo-QJI"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-8H-6XL" customClass="FancyBtn" customModule="Party_Face" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="404" width="350" height="50"/>
+                                        <color key="backgroundColor" red="0.4963085949420929" green="0.81845152378082275" blue="0.87454009056091309" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cDI-GO-tGk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
+                                        <state key="normal" title="LOG IN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21320028020000001" green="0.72058276440000002" blue="0.87134213059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yHC-Bf-D28" firstAttribute="top" secondItem="8Lz-ah-mJ1" secondAttribute="bottom" constant="8" id="44X-KA-fgs"/>
+                                    <constraint firstItem="hq5-8H-6XL" firstAttribute="leading" secondItem="Vmj-9v-gKs" secondAttribute="leading" constant="32" id="5a5-45-10P"/>
+                                    <constraint firstItem="YJs-xg-D73" firstAttribute="leading" secondItem="Vmj-9v-gKs" secondAttribute="leading" constant="32" id="5gD-6w-9c3"/>
+                                    <constraint firstItem="RY0-Ey-AtY" firstAttribute="top" secondItem="cWg-Rq-ED6" secondAttribute="bottom" constant="2" id="81h-59-BbV"/>
+                                    <constraint firstAttribute="trailing" secondItem="hq5-8H-6XL" secondAttribute="trailing" constant="32" id="8RG-fO-W3W"/>
+                                    <constraint firstItem="8Lz-ah-mJ1" firstAttribute="centerX" secondItem="Vmj-9v-gKs" secondAttribute="centerX" id="AiL-8b-4vi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ivg-OV-WgM" secondAttribute="trailing" constant="8" id="CpZ-xn-l6J"/>
+                                    <constraint firstItem="4tz-8z-cPW" firstAttribute="top" secondItem="YJs-xg-D73" secondAttribute="bottom" constant="20" id="Cwd-hO-ESL"/>
+                                    <constraint firstItem="Ivg-OV-WgM" firstAttribute="leading" secondItem="Vmj-9v-gKs" secondAttribute="leading" constant="8" id="ENB-yw-NRz"/>
+                                    <constraint firstItem="YJs-xg-D73" firstAttribute="top" secondItem="GIs-BI-nEE" secondAttribute="bottom" constant="2" id="GIP-Z1-ger"/>
+                                    <constraint firstItem="FKa-sM-gHZ" firstAttribute="leading" secondItem="GIs-BI-nEE" secondAttribute="trailing" constant="8" id="JDy-aM-yhQ"/>
+                                    <constraint firstItem="cWg-Rq-ED6" firstAttribute="leading" secondItem="4tz-8z-cPW" secondAttribute="trailing" constant="8" id="Kfl-dp-Ums"/>
+                                    <constraint firstAttribute="trailing" secondItem="cWg-Rq-ED6" secondAttribute="trailing" constant="32" id="SmC-2k-Kp0"/>
+                                    <constraint firstItem="GIs-BI-nEE" firstAttribute="top" secondItem="Vmj-9v-gKs" secondAttribute="top" constant="260" id="VhD-ek-cOz"/>
+                                    <constraint firstItem="GIs-BI-nEE" firstAttribute="leading" secondItem="Vmj-9v-gKs" secondAttribute="leading" constant="34" id="X8l-hW-y51"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ivg-OV-WgM" secondAttribute="bottom" constant="8" id="bf3-O1-9hY"/>
+                                    <constraint firstItem="8Lz-ah-mJ1" firstAttribute="top" secondItem="Vmj-9v-gKs" secondAttribute="top" constant="55" id="dAh-3D-sz7"/>
+                                    <constraint firstItem="4tz-8z-cPW" firstAttribute="leading" secondItem="Vmj-9v-gKs" secondAttribute="leading" constant="34" id="eYk-1b-PPm"/>
+                                    <constraint firstItem="yHC-Bf-D28" firstAttribute="centerX" secondItem="Vmj-9v-gKs" secondAttribute="centerX" id="jwc-Jr-seX"/>
+                                    <constraint firstItem="hq5-8H-6XL" firstAttribute="top" secondItem="RY0-Ey-AtY" secondAttribute="bottom" constant="60" id="qdR-QV-KHi"/>
+                                    <constraint firstAttribute="trailing" secondItem="RY0-Ey-AtY" secondAttribute="trailing" constant="32" id="sP8-x4-WUM"/>
+                                    <constraint firstAttribute="trailing" secondItem="FKa-sM-gHZ" secondAttribute="trailing" constant="32" id="vfw-QJ-VoH"/>
+                                    <constraint firstItem="cWg-Rq-ED6" firstAttribute="top" secondItem="YJs-xg-D73" secondAttribute="bottom" constant="20" id="w8V-O3-dsF"/>
+                                    <constraint firstItem="RY0-Ey-AtY" firstAttribute="leading" secondItem="Vmj-9v-gKs" secondAttribute="leading" constant="32" id="ydE-O4-VDP"/>
+                                    <constraint firstAttribute="trailing" secondItem="YJs-xg-D73" secondAttribute="trailing" constant="32" id="z9i-5I-1Wr"/>
+                                    <constraint firstItem="FKa-sM-gHZ" firstAttribute="top" secondItem="yHC-Bf-D28" secondAttribute="bottom" constant="17" id="zHe-8o-WYr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vmj-9v-gKs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="APr-be-cWu"/>
+                            <constraint firstItem="Vmj-9v-gKs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HBC-Bo-Nsf"/>
+                            <constraint firstAttribute="bottom" secondItem="Vmj-9v-gKs" secondAttribute="bottom" id="Wcu-8r-L4Y"/>
+                            <constraint firstItem="Vmj-9v-gKs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jeq-TM-C8X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="FKa-sM-gHZ" id="2dg-Hz-ERc"/>
+                        <outlet property="passwordField" destination="cWg-Rq-ED6" id="eEa-D5-C8F"/>
+                        <outlet property="signInBackground" destination="Vmj-9v-gKs" id="dF5-j0-ioL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.25" y="129.92957746478874"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="email logo" width="172" height="112"/>
+        <image name="party face logo" width="172" height="163"/>
+        <image name="password logo" width="136" height="172"/>
+    </resources>
 </document>
