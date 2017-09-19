@@ -276,25 +276,25 @@
                                                     <rect key="frame" x="8" y="8" width="398" height="313.66666666666669"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matheus-ferrero-233592" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-Aj-TRa">
-                                                            <rect key="frame" x="0.0" y="47.666666666666671" width="398" height="225"/>
+                                                            <rect key="frame" x="0.0" y="44.333333333333329" width="398" height="225"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="225" id="h0b-zH-Q7Y"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matheus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOV-hO-Kdk">
-                                                            <rect key="frame" x="8" y="0.0" width="382" height="24.666666666666664"/>
+                                                            <rect key="frame" x="8" y="0.0" width="382" height="22.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="19"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/08/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yao-Th-FOJ">
-                                                            <rect key="frame" x="8" y="24.666666666666664" width="382" height="15"/>
+                                                            <rect key="frame" x="8" y="22.333333333333336" width="382" height="14.000000000000007"/>
                                                             <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="12"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequecy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBU-mi-ctJ">
-                                                            <rect key="frame" x="8" y="276" width="382" height="27"/>
+                                                            <rect key="frame" x="8" y="272.66666666666669" width="382" height="27"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="27" id="KS3-Rm-sPL"/>
                                                             </constraints>
@@ -425,7 +425,7 @@
                                     <constraint firstItem="GWs-Bv-bgA" firstAttribute="centerY" secondItem="MDU-EC-gnr" secondAttribute="centerY" id="rfp-nI-hzV"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matheus-ferrero-233592" translatesAutoresizingMaskIntoConstraints="NO" id="Ke5-ah-Y0b">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quin-stevenson-14890" translatesAutoresizingMaskIntoConstraints="NO" id="Ke5-ah-Y0b">
                                 <rect key="frame" x="0.0" y="70" width="414" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="230" id="4Cc-Py-uGG"/>
@@ -485,7 +485,7 @@
                                 <rect key="frame" x="0.0" y="427" width="414" height="253"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq6-2R-Z36" customClass="FancyBtn" customModule="Party_Face" customModuleProvider="target">
-                                        <rect key="frame" x="152.33333333333331" y="109.66666666666663" width="109.99999999999994" height="34"/>
+                                        <rect key="frame" x="152.33333333333331" y="110.66666666666663" width="109.99999999999994" height="32"/>
                                         <color key="backgroundColor" red="0.49630859490000001" green="0.81845152379999997" blue="0.87454009060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="OPr-cy-NIs"/>
@@ -552,6 +552,7 @@
         <image name="matheus-ferrero-233592" width="3888" height="5833"/>
         <image name="party face logo" width="172" height="163"/>
         <image name="password logo" width="136" height="172"/>
+        <image name="quin-stevenson-14890" width="5472" height="3648"/>
         <image name="user icon white" width="172" height="164"/>
         <image name="users icon" width="172" height="93"/>
     </resources>

@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-eg-mIi">
-                                        <rect key="frame" x="112.5" y="241" width="150" height="186.5"/>
+                                        <rect key="frame" x="112.5" y="240.5" width="150" height="186.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party face logo" translatesAutoresizingMaskIntoConstraints="NO" id="s5k-BB-wp5">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
