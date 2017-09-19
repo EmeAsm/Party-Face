@@ -10,5 +10,6 @@ target 'Party Face' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'SwiftKeychainWrapper'
 
 end

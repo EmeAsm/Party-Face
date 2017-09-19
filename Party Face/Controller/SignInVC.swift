@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController, UITextFieldDelegate {
 
@@ -26,6 +27,14 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         self.emailField.delegate = self
         self.passwordField.delegate = self
         
+    }
+    
+    // Open Feed from Sign In
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("EMERICK: ID found in keychain")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
     
     // Hide keyboard when user touches outside keyboard
@@ -47,6 +56,9 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     print("EMERICK: Email user authenticated with Firebase")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
@@ -54,12 +66,22 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                             self.passwordError.isHidden = false
                         } else {
                             print("EMERICK: Successfully authenticated with Firebase")
+                            self.passwordError.isHidden = true
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
                         }
                     })
                 }
             })
         }
         
+    }
+    
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("EMERICK: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     
 }
