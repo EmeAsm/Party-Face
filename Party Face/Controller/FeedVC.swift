@@ -17,11 +17,17 @@ class FeedVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func userBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "feedToUser", sender: nil)
+    
+    @IBAction func goToProfilePressed(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! UserVC
+        self.present(vc, animated: false, completion: nil)
     }
     
+    
+    @IBAction func usersBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "feedToUsers", sender: nil)
+        print("EMERICK: segue pressed")
+    }
     
     
 }

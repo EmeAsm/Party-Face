@@ -15,7 +15,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signInBackground: UIView!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var passwordError: UILabel!
+    
+    let netWorkingService = NetworkingService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +30,26 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         
     }
     
-    // Open Feed from Sign In
+    // Open Feed from Log In
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             print("EMERICK: ID found in keychain")
-            performSegue(withIdentifier: "goToFeed", sender: nil)
+            // Perform segue between SignInVC to FeedVC
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyFeed") as! FeedVC
+            self.present(vc, animated: false, completion: nil)
         }
+    }
+    
+    // Open Sign Up From Log In
+    @IBAction func signUpBtnPressed(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Signup") as! SignUpVC
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    // Open Forgot Password From Log In
+    @IBAction func forgotPasswordPressed(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResetPassword") as! PasswordVC
+        self.present(vc, animated: true, completion: nil)
     }
     
     // Hide keyboard when user touches outside keyboard
@@ -61,23 +76,16 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                         self.completeSignIn(id: user.uid, userData: userData)
                     }
                 } else {
-                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
-                        if error != nil {
-                            print("EMERICK: Unable to authenticate with Firebase using email")
-                            self.passwordError.isHidden = false
-                        } else {
-                            print("EMERICK: Successfully authenticated with Firebase")
-                            self.passwordError.isHidden = true
-                            if let user = user {
-                                let userData = ["provider": user.providerID]
-                                self.completeSignIn(id: user.uid, userData:  userData)
-                            }
-                        }
-                    })
+                    print("EMERICK: Something went wrong while trying to log in")
+                    let alert = UIAlertController(title: "Log In", message: error!.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
                 }
-            })
+            }) 
         }
-        
+
     }
     
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
@@ -85,8 +93,11 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("EMERICK: Data saved to keychain \(keychainResult)")
-        performSegue(withIdentifier: "goToFeed", sender: nil)
+        // Perform segue between SignInVC to FeedVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyFeed") as! FeedVC
+        self.present(vc, animated: false, completion: nil)
     }
+    
     
 }
 

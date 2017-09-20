@@ -24,6 +24,12 @@
 		1B49FF251F7107900023D363 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49FF241F7107900023D363 /* FancyView.swift */; };
 		1B49FF271F710A780023D363 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49FF261F710A780023D363 /* UserVC.swift */; };
 		1B49FF2C1F711FD10023D363 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49FF2B1F711FD10023D363 /* DataService.swift */; };
+		1B4C9E771F725D0300C747FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C9E761F725D0300C747FE /* User.swift */; };
+		1B4C9E791F72707F00C747FE /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C9E781F72707F00C747FE /* UsersVC.swift */; };
+		1B5B265B1F7162A900218815 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B265A1F7162A900218815 /* RoundView.swift */; };
+		1B5B265D1F7165A700218815 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B265C1F7165A700218815 /* SignUpVC.swift */; };
+		1B5B265F1F716AC700218815 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B265E1F716AC700218815 /* NetworkingService.swift */; };
+		1B5B26611F71933400218815 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B26601F71933400218815 /* PasswordVC.swift */; };
 		F7C3C2EC855F7A078E36BECE /* Pods_Party_Face.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C412C49113F732F4A15C33A /* Pods_Party_Face.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +53,12 @@
 		1B49FF241F7107900023D363 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		1B49FF261F710A780023D363 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		1B49FF2B1F711FD10023D363 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1B4C9E761F725D0300C747FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1B4C9E781F72707F00C747FE /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		1B5B265A1F7162A900218815 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		1B5B265C1F7165A700218815 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		1B5B265E1F716AC700218815 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		1B5B26601F71933400218815 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
 		2A23D5953899109669E042DA /* Pods-Party Face.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Face.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party Face/Pods-Party Face.debug.xcconfig"; sourceTree = "<group>"; };
 		2C412C49113F732F4A15C33A /* Pods_Party_Face.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_Face.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC3306A81231D8133081095 /* Pods-Party Face.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Face.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party Face/Pods-Party Face.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +120,7 @@
 				1B2D9A541F6FF591006D0C12 /* GradientView */,
 				1B2D9A5C1F700638006D0C12 /* FancyBtn.swift */,
 				1B49FF241F7107900023D363 /* FancyView.swift */,
+				1B5B265A1F7162A900218815 /* RoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +129,11 @@
 			isa = PBXGroup;
 			children = (
 				1B1C80F81F6FF2360019A353 /* SignInVC.swift */,
+				1B5B265C1F7165A700218815 /* SignUpVC.swift */,
+				1B5B26601F71933400218815 /* PasswordVC.swift */,
 				1B2D9A651F7021B1006D0C12 /* FeedVC.swift */,
 				1B49FF261F710A780023D363 /* UserVC.swift */,
+				1B4C9E781F72707F00C747FE /* UsersVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,6 +141,7 @@
 		1B1C810D1F6FF27B0019A353 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1B4C9E761F725D0300C747FE /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1B49FF2B1F711FD10023D363 /* DataService.swift */,
+				1B5B265E1F716AC700218815 /* NetworkingService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -317,14 +335,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B49FF251F7107900023D363 /* FancyView.swift in Sources */,
+				1B5B26611F71933400218815 /* PasswordVC.swift in Sources */,
+				1B5B265B1F7162A900218815 /* RoundView.swift in Sources */,
 				1B49FF271F710A780023D363 /* UserVC.swift in Sources */,
+				1B4C9E771F725D0300C747FE /* User.swift in Sources */,
+				1B4C9E791F72707F00C747FE /* UsersVC.swift in Sources */,
 				1B2D9A5D1F700638006D0C12 /* FancyBtn.swift in Sources */,
 				1B1C80F91F6FF2360019A353 /* SignInVC.swift in Sources */,
+				1B5B265F1F716AC700218815 /* NetworkingService.swift in Sources */,
 				1B2D9A561F6FF5A8006D0C12 /* Colors.swift in Sources */,
 				1B49FF2C1F711FD10023D363 /* DataService.swift in Sources */,
 				1B1C80FF1F6FF2360019A353 /* Party_Face.xcdatamodeld in Sources */,
 				1B2D9A661F7021B1006D0C12 /* FeedVC.swift in Sources */,
 				1B2D9A601F700693006D0C12 /* Constants.swift in Sources */,
+				1B5B265D1F7165A700218815 /* SignUpVC.swift in Sources */,
 				1B2D9A581F6FF5FD006D0C12 /* GradientView.swift in Sources */,
 				1B1C80F71F6FF2360019A353 /* AppDelegate.swift in Sources */,
 			);
