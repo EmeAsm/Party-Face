@@ -21,6 +21,7 @@
 		1B2D9A631F701967006D0C12 /* Dosis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1B2D9A5A1F6FFF84006D0C12 /* Dosis-SemiBold.otf */; };
 		1B2D9A641F701967006D0C12 /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B2D9A5B1F700030006D0C12 /* Baloo-Regular.ttf */; };
 		1B2D9A661F7021B1006D0C12 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D9A651F7021B1006D0C12 /* FeedVC.swift */; };
+		1B4274951F73A43D008DDCDE /* AddPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4274941F73A43D008DDCDE /* AddPersonVC.swift */; };
 		1B49FF251F7107900023D363 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49FF241F7107900023D363 /* FancyView.swift */; };
 		1B49FF271F710A780023D363 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49FF261F710A780023D363 /* UserVC.swift */; };
 		1B49FF2C1F711FD10023D363 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49FF2B1F711FD10023D363 /* DataService.swift */; };
@@ -30,6 +31,12 @@
 		1B5B265D1F7165A700218815 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B265C1F7165A700218815 /* SignUpVC.swift */; };
 		1B5B265F1F716AC700218815 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B265E1F716AC700218815 /* NetworkingService.swift */; };
 		1B5B26611F71933400218815 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B26601F71933400218815 /* PasswordVC.swift */; };
+		1B7D4A781F73BD1F0079548D /* AddPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D4A771F73BD1F0079548D /* AddPerson.swift */; };
+		1B7D4A7A1F73C6B90079548D /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D4A791F73C6B90079548D /* FeedCell.swift */; };
+		1B7D4A7C1F73C80C0079548D /* PostTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D4A7B1F73C80C0079548D /* PostTVController.swift */; };
+		1B7D4A7E1F73E01D0079548D /* UsersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D4A7D1F73E01D0079548D /* UsersCell.swift */; };
+		1B7D4A811F73E0520079548D /* UsersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D4A801F73E0520079548D /* UsersTVC.swift */; };
+		1BE45F081F76B9A900B6325C /* savePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE45F071F76B9A900B6325C /* savePerson.swift */; };
 		F7C3C2EC855F7A078E36BECE /* Pods_Party_Face.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C412C49113F732F4A15C33A /* Pods_Party_Face.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +57,7 @@
 		1B2D9A5F1F700693006D0C12 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1B2D9A611F70168D006D0C12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B2D9A651F7021B1006D0C12 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		1B4274941F73A43D008DDCDE /* AddPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonVC.swift; sourceTree = "<group>"; };
 		1B49FF241F7107900023D363 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		1B49FF261F710A780023D363 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		1B49FF2B1F711FD10023D363 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -59,6 +67,12 @@
 		1B5B265C1F7165A700218815 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		1B5B265E1F716AC700218815 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		1B5B26601F71933400218815 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
+		1B7D4A771F73BD1F0079548D /* AddPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPerson.swift; sourceTree = "<group>"; };
+		1B7D4A791F73C6B90079548D /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		1B7D4A7B1F73C80C0079548D /* PostTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVController.swift; sourceTree = "<group>"; };
+		1B7D4A7D1F73E01D0079548D /* UsersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCell.swift; sourceTree = "<group>"; };
+		1B7D4A801F73E0520079548D /* UsersTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTVC.swift; sourceTree = "<group>"; };
+		1BE45F071F76B9A900B6325C /* savePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savePerson.swift; sourceTree = "<group>"; };
 		2A23D5953899109669E042DA /* Pods-Party Face.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Face.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party Face/Pods-Party Face.debug.xcconfig"; sourceTree = "<group>"; };
 		2C412C49113F732F4A15C33A /* Pods_Party_Face.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_Face.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC3306A81231D8133081095 /* Pods-Party Face.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Face.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party Face/Pods-Party Face.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,9 +145,10 @@
 				1B1C80F81F6FF2360019A353 /* SignInVC.swift */,
 				1B5B265C1F7165A700218815 /* SignUpVC.swift */,
 				1B5B26601F71933400218815 /* PasswordVC.swift */,
-				1B2D9A651F7021B1006D0C12 /* FeedVC.swift */,
+				1B8A11171F765521002AD603 /* Feed */,
 				1B49FF261F710A780023D363 /* UserVC.swift */,
-				1B4C9E781F72707F00C747FE /* UsersVC.swift */,
+				1B7D4A7F1F73E0260079548D /* Users */,
+				1B4274941F73A43D008DDCDE /* AddPersonVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				1B4C9E761F725D0300C747FE /* User.swift */,
+				1B7D4A771F73BD1F0079548D /* AddPerson.swift */,
+				1BE45F071F76B9A900B6325C /* savePerson.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +196,26 @@
 				1B5B265E1F716AC700218815 /* NetworkingService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1B7D4A7F1F73E0260079548D /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				1B4C9E781F72707F00C747FE /* UsersVC.swift */,
+				1B7D4A7D1F73E01D0079548D /* UsersCell.swift */,
+				1B7D4A801F73E0520079548D /* UsersTVC.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		1B8A11171F765521002AD603 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1B2D9A651F7021B1006D0C12 /* FeedVC.swift */,
+				1B7D4A791F73C6B90079548D /* FeedCell.swift */,
+				1B7D4A7B1F73C80C0079548D /* PostTVController.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		AF230DC26E88453072DB89C9 /* Frameworks */ = {
@@ -334,9 +371,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7D4A7E1F73E01D0079548D /* UsersCell.swift in Sources */,
 				1B49FF251F7107900023D363 /* FancyView.swift in Sources */,
+				1B7D4A7C1F73C80C0079548D /* PostTVController.swift in Sources */,
 				1B5B26611F71933400218815 /* PasswordVC.swift in Sources */,
 				1B5B265B1F7162A900218815 /* RoundView.swift in Sources */,
+				1B7D4A7A1F73C6B90079548D /* FeedCell.swift in Sources */,
+				1B4274951F73A43D008DDCDE /* AddPersonVC.swift in Sources */,
+				1B7D4A781F73BD1F0079548D /* AddPerson.swift in Sources */,
 				1B49FF271F710A780023D363 /* UserVC.swift in Sources */,
 				1B4C9E771F725D0300C747FE /* User.swift in Sources */,
 				1B4C9E791F72707F00C747FE /* UsersVC.swift in Sources */,
@@ -346,7 +388,9 @@
 				1B2D9A561F6FF5A8006D0C12 /* Colors.swift in Sources */,
 				1B49FF2C1F711FD10023D363 /* DataService.swift in Sources */,
 				1B1C80FF1F6FF2360019A353 /* Party_Face.xcdatamodeld in Sources */,
+				1BE45F081F76B9A900B6325C /* savePerson.swift in Sources */,
 				1B2D9A661F7021B1006D0C12 /* FeedVC.swift in Sources */,
+				1B7D4A811F73E0520079548D /* UsersTVC.swift in Sources */,
 				1B2D9A601F700693006D0C12 /* Constants.swift in Sources */,
 				1B5B265D1F7165A700218815 /* SignUpVC.swift in Sources */,
 				1B2D9A581F6FF5FD006D0C12 /* GradientView.swift in Sources */,

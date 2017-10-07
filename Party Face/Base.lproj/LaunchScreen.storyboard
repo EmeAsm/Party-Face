@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,15 +14,53 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KT-Jj-W4E">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kmq-Fd-v5E">
+                                        <rect key="frame" x="70" y="194" width="180" height="180"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t8u-6t-xAT">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party face logo" translatesAutoresizingMaskIntoConstraints="NO" id="TLU-17-MIS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="180" id="MTv-Cs-UYe"/>
+                                                            <constraint firstAttribute="height" constant="180" id="fNQ-Hq-f9z"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.72156862749999995" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kmq-Fd-v5E" firstAttribute="centerY" secondItem="4KT-Jj-W4E" secondAttribute="centerY" id="0In-8P-fUB"/>
+                                    <constraint firstItem="Kmq-Fd-v5E" firstAttribute="centerX" secondItem="4KT-Jj-W4E" secondAttribute="centerX" id="d4b-CR-BQ8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4KT-Jj-W4E" secondAttribute="trailing" id="9Cm-fx-IZ6"/>
+                            <constraint firstItem="4KT-Jj-W4E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FeX-Za-GNE"/>
+                            <constraint firstItem="4KT-Jj-W4E" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="uVx-I2-DQN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4KT-Jj-W4E" secondAttribute="bottom" id="xhi-Pm-ErB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+            <point key="canvasLocation" x="52" y="373.76311844077964"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="party face logo" width="172" height="163"/>
+    </resources>
 </document>

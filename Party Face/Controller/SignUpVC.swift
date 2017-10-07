@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var signUpBackground: UIView!
     @IBOutlet weak var usernameField: UITextField!
@@ -30,6 +30,11 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
         // Pick profile picture from photo library
         picker.delegate = self
+        
+        // Return keyboard
+        self.usernameField.delegate = self
+        self.emailField.delegate = self
+        self.passwordField.delegate = self
         
     }
     
